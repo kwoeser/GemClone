@@ -1,3 +1,3 @@
-# KARMA AI
+# ChatGPT Clone
 
-ChatGPT Clone
+
