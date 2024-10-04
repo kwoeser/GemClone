@@ -1,0 +1,40 @@
+.signInPage {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* the card inside the Clerk component */
+.signInPage .cl-card {
+    max-width: 100%;
+    padding: 2rem; 
+}
+
+/* Adjust form input fields */
+.signInPage .cl-form-field {
+    width: 85%;
+    margin-bottom: 0.5rem; /* Reduce space between fields */
+}
+
+
+/* Target the "Don't have an account? Sign up" text and link */
+.signInPage .cl-footerAction,
+.signInPage .cl-footerActionLink {
+    white-space: nowrap; /* Prevent line breaks */
+    margin: 0;
+}
+
+
+/* Target both the text and the link */
+.signInPage .cl-footerAction,
+.signInPage .cl-footerAction * {
+    font-size: 0.75rem; /* Ensure all text within cl-footerAction has the same size */
+}
+
+/* Handle window size chagne of 400px */
+@media (min-width: 400px) {
+    .signInPage .cl-footerAction {
+        white-space: nowrap;
+    }
+}

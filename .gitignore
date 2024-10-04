@@ -11,6 +11,9 @@ node_modules
 dist
 dist-ssr
 *.local
+ 
+# ADD .env to hide api key on github
+.env
 
 # Editor directories and files
 .vscode/*

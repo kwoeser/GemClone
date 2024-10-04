@@ -3,3 +3,10 @@ npm run dev
 
 # requirements
 npm i react-router-dom
+
+
+
+# clerk auth use to handle google and email logins
+https://dashboard.clerk.com/apps/app_2mtVoo9Ya2pHJMkQ90Ykk3asfOo/instances/ins_2mtVonmlmkxNaJhqQIMP0EeM5l8
+npm install @clerk/clerk-react
+couldn't install clerk so i had to npm install @clerk/clerk-react --legacy-deps 
