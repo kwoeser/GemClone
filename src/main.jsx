@@ -12,11 +12,7 @@ import SignInPage from './routes/signInPage/SignInPage.jsx';
 import SignUpPage from './routes/signUpPage/SignUpPage.jsx';
 
 
-// Why im i not able to see the dashboard page when i navigate to /dashboard
-// You are not rendering the DashboardPage component in your router configuration.
-// You need to add a route for the DashboardPage in the router configuration.
-// Here's how you can do it:
-// SHow me how to do it
+
 const router = createBrowserRouter([
   {
     element: <RootLayout/>,
