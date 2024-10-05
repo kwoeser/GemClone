@@ -12,7 +12,9 @@ import SignInPage from './routes/signInPage/SignInPage.jsx';
 import SignUpPage from './routes/signUpPage/SignUpPage.jsx';
 
 
-
+// Handles page routing 
+// https://reactrouter.com/web/api/createBrowserRouter
+// https://reactrouter.com/web/api/RouterProvider
 const router = createBrowserRouter([
   {
     element: <RootLayout/>,
