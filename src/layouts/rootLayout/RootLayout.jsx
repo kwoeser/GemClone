@@ -30,7 +30,11 @@ const RootLayout = () => {
               {/* Handle user auth using clerk components */}
               <div className='user'>
                 <SignedOut>
-                  <SignInButton />
+                  <SignInButton mode="modal" redirectUrl="/sign-in"  className = "customSignInButton">
+                    {/* <SignInButton className = "customSignInButton"/> */}
+                    Log in
+                  </SignInButton>
+                  
                 </SignedOut>
                 <SignedIn>
                   <UserButton />

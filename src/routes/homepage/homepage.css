@@ -26,7 +26,8 @@
     border: 1px solid black;
     color: black; 
     border-radius: 20px;
-    cursor: pointer;
+    cursor: pointer;  
+    transition: background-color 0.4s; /* Smooth transition */  
 }
 
 
