@@ -1,7 +1,9 @@
 npm install
 npm run dev
 
-# requirements
+
+created with vite
+### REQUIREMENTS
 npm i react-router-dom
 
 
@@ -11,3 +13,7 @@ couldn't install clerk so i had to npm install @clerk/clerk-react --legacy-deps
 
 # get api key and clerk instructions from 
 https://dashboard.clerk.com/apps/app_2mtVoo9Ya2pHJMkQ90Ykk3asfOo/instances/ins_2mtVonmlmkxNaJhqQIMP0EeM5l8
+
+
+
+

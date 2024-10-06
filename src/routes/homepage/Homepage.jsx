@@ -9,11 +9,28 @@ const Homepage = () => {
       <div className="left">
         <h1>WELCOME TO</h1>
         <h1 className='center'>KARMA AI</h1>
-
-        <button className='start_button'>Start Now</button>
+  
+        {/* SENDS YOU TO dashboard if you are signed in already */}
+        <Link to="/dashboard" className='start_button'>Start Now</Link>
       </div>
-      {/* <div className="right"></div> */}
+
+
+
+      {/* TERMS of SERVICES N/A */}
+      {/* <div className='terms'>
+        <div className='links'>
+          <Link to="/terms-of-service">Terms of Service</Link>
+          <Link to="/privacy-policy">Privacy Policy</Link>
+        </div>
+      </div> */}
+      
     </div>
+
+    
+      
+
+
+
   )
 }
 
