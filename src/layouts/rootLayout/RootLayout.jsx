@@ -22,9 +22,11 @@ const RootLayout = () => {
               {/* Linked to root directory ("/") */}
               {/* Link comes from react-router-dom package */}
               <Link to = "/" className='logo'>
-                  <img src="/logo.png" alt="" />
+                  <img src="logo.png" alt="tibetan logo"/>
                   <span>KARMA AI</span>
               </Link>
+
+
               {/* Handle user auth using clerk components */}
               <div className='user'>
                 <SignedOut>
