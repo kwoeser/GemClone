@@ -22,7 +22,7 @@ const RootLayout = () => {
               {/* Linked to root directory ("/") */}
               {/* Link comes from react-router-dom package */}
               <Link to = "/" className='logo'>
-                  <img src="logo.png" alt="tibetan logo"/>
+                  <img src="/logo.png" alt="tibetan logo"/>
                   <span>KARMA AI</span>
               </Link>
 
@@ -30,8 +30,8 @@ const RootLayout = () => {
               {/* Handle user auth using clerk components */}
               <div className='user'>
                 <SignedOut>
+                  
                   <SignInButton mode="modal" redirectUrl="/sign-in"  className = "customSignInButton">
-                    {/* <SignInButton className = "customSignInButton"/> */}
                     Log in
                   </SignInButton>
                   

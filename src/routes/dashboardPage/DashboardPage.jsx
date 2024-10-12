@@ -9,6 +9,8 @@ const DashboardPage = () => {
           <img src="/logo.png" alt="dashboardPage logo image" />
           <h1>KARMA AI</h1>
         </div>
+
+        {/* contains options to help you */}
         <div className="options_container">
           <div className="option">
             <img src="/chat.png" alt="" />
@@ -30,7 +32,7 @@ const DashboardPage = () => {
 
       <div className="formContainer">
         <form>
-          <input type="text" placeholder="Message Karma AI..."/>
+          <input type="text" placeholder="Message Me..."/>
           <button>
             <img src="/arrow.png" alt="" />
           </button>
