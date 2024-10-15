@@ -1,19 +1,18 @@
 .endChat {
-    padding-bottom: 10px;
+    padding-bottom: 70px;
 }
 
 
 .newPrompt {
     .newForm {
-        width: 50%;;
+        width: 70%;;
         position: absolute;
         bottom: 0;
         background-color: #2c2937;
         border-radius: 20px;
-        padding: 20px;
         display: flex;
         align-items: center;
-        gap: 20px;
+        /* gap: 20px; */
         padding: 0px 20px;
     }
 

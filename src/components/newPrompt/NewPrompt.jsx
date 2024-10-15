@@ -16,7 +16,7 @@ const NewPrompt = () => {
     <>
 
     {/* New chat is added here */}
-    test
+    {/* test */}
     <div className="endChat" ref={endRef}></div>
 
         <div className="newPrompt">
