@@ -1,0 +1,7 @@
+started backend with npm init -y 
+
+
+#packages
+npm i nodemon
+npm i express
+npm i imagekit (GRAB API KEY FROM imagekit.io)
