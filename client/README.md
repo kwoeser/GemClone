@@ -1,4 +1,4 @@
-# ChatGPT Clone
+
 
 used clerk for auth and user management
 
