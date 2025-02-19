@@ -5,11 +5,11 @@ import { ClerkProvider } from '@clerk/clerk-react'
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
 
 
-// Import your publishable key from the env file
+// Import publishable key from the env file
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
 
 if (!PUBLISHABLE_KEY) {
-  throw new Error("Missing Publishable Key")
+  throw new Error("Missing Publishable Key CLERK")
 }
 
 

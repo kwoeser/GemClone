@@ -4,4 +4,7 @@ initialized backend with npm init -y
 #packages
 npm i nodemon
 npm i express
-npm i imagekit (GRAB API KEY FROM imagekit.io)
+npm i imagekit (GRAB API KEYS FROM imagekit.io)
+
+
+CLERK API KEYS WILL BE IN CLIENT

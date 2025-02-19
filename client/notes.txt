@@ -1,19 +1,40 @@
 initialized with vite
 
+
 ### REQUIREMENTS
+
+backend 
+------------
+npm install -g nodemon
 npm i react-router-dom
+
+How to start:
+backend -> npm start
+
+client 
+------------
+npm install @google/generative-ai
+
+How to start:
+client -> npm run dev
+
+
 
 # clerk auth use to handle google and email logins
 npm install @clerk/clerk-react
 couldn't install clerk so i had to npm install @clerk/clerk-react --legacy-deps 
 
-# get api key and clerk instructions from 
+# Grab api key and clerk instructions from and put key in client/.env
 https://dashboard.clerk.com/apps/app_2mtVoo9Ya2pHJMkQ90Ykk3asfOo/instances/ins_2mtVonmlmkxNaJhqQIMP0EeM5l8
+
+
 
 
 
 # handles images using imagekit.io
 npm install -f imagekitio-react
+
+
 
 
 
