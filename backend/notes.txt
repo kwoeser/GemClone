@@ -1,4 +1,4 @@
-started backend with npm init -y 
+initialized backend with npm init -y 
 
 
 #packages

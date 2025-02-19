@@ -1,11 +1,7 @@
-npm install
-npm run dev
-
-created with vite
+initialized with vite
 
 ### REQUIREMENTS
 npm i react-router-dom
-
 
 # clerk auth use to handle google and email logins
 npm install @clerk/clerk-react
@@ -18,6 +14,12 @@ https://dashboard.clerk.com/apps/app_2mtVoo9Ya2pHJMkQ90Ykk3asfOo/instances/ins_2
 
 # handles images using imagekit.io
 npm install -f imagekitio-react
+
+
+
+How to start:
+backend -> npm start
+client -> npm run dev
 
 
 
