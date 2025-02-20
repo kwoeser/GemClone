@@ -4,6 +4,8 @@ A full-stack chat application that uses Google's Gemini AI API. The chat interfa
 ## Live Demo
 Check out the live application: [GemClone on Vercel](https://gem-clone-lilac.vercel.app/)
 
+![Screenshot 2025-02-19 225851](https://github.com/user-attachments/assets/323a5f63-726b-4cc0-b54a-b66539d9934c)
+
 ## Features
 - Real-time chat interface with AI responses
 - Secure sign-up and login functionality
