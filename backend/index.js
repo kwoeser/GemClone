@@ -13,7 +13,7 @@ app.use(
 
 app.use(express.json());
 
-// Handles image uploads
+// Handles image uploads NOT WORKING CURRENTLY
 const imagekit = new Imagekit({
   urlEndpoint: process.env.VITE_IMAGE_KIT_ENDPOINT,
   publicKey: process.env.VITE_IMAGE_KIT_PUBLIC_KEY,
