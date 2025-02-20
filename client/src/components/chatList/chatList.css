@@ -23,7 +23,7 @@
 
 
     .title {
-        font-size: 10px;
+        font-size: 20px;
         font-weight: 600;
         margin-bottom: 10px;
     }
@@ -63,6 +63,7 @@
     a {
         padding: 10px;
         border-radius: 10px;
+        font-size: 25px;
 
         &:hover {
             background-color: #2c2937;

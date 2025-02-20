@@ -17,7 +17,9 @@ const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_PUBLIC_KEY);
 
 
 
-const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash", safetySetting});
+// Remove safety
+// doesn't work
+const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash"});
 
 
 

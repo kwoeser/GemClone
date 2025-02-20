@@ -1,11 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Homepage from './routes/homepage/Homepage.jsx';
 import DashboardPage from './routes/dashboardPage/DashboardPage.jsx';
-import Chatpage from './routes/chatPage/ChatPage.jsx';
 import RootLayout from './layouts/rootLayout/RootLayout.jsx';
 import DashboardLayout from './layouts/dashboardLayout/DashboardLayout.jsx';
 import SignInPage from './routes/signInPage/SignInPage.jsx';
@@ -35,10 +33,6 @@ const router = createBrowserRouter([
         children: [
           { path: "/dashboard",
             element: <DashboardPage/>
-          },
-          {
-            path: "/dashboard/chats/:id",
-            element: <Chatpage/>
           },
         ]
       }

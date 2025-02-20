@@ -14,15 +14,6 @@ const Homepage = () => {
         <Link to="/dashboard" className='start_button'>Start Now</Link>
       </div>
 
-
-
-      {/* TERMS of SERVICES N/A */}
-      {/* <div className='terms'>
-        <div className='links'>
-          <Link to="/terms-of-service">Terms of Service</Link>
-          <Link to="/privacy-policy">Privacy Policy</Link>
-        </div>
-      </div> */}
       
     </div>
 
