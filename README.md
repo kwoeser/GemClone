@@ -1,6 +1,9 @@
 # AI Chat Dashboard
 A full-stack chat application that uses Google's Gemini AI API. The chat interface is built with React and Vite. Uses Clerk authentication to create a secure, personalized AI chat experience.
 
+## Live Demo
+Check out the live application: [GemClone on Vercel](https://gem-clone-lilac.vercel.app/)
+
 ## Features
 - Real-time chat interface with AI responses
 - Secure sign-up and login functionality
@@ -14,6 +17,16 @@ A full-stack chat application that uses Google's Gemini AI API. The chat interfa
 
 - Node.js >= 18
 - npm
+- Clerk Account
+- Google AI Studio API Key
+
+### Environment Setup
+
+1. Create a `.env` file in your project root and add:
+```env
+VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+VITE_GEMINI_API_KEY=your_gemini_api_key
+```
 
 ### Installation
 
@@ -24,7 +37,7 @@ git clone [https://github.com/kwoeser/GemClone]
 
 2. Navigate to the project directory:
 ```bash
-cd client
+cd GemClone/client
 ```
 
 3. Install dependencies:
