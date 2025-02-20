@@ -2,6 +2,16 @@ import React from 'react'
 import './dashboardPage.css'
 
 const DashboardPage = () => {
+  
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const text = e.target.text.value;
+    if (!text) return;
+  
+    // mutation.mutate(text);
+  };
+
+
   return (
     <div className='dashboardPage'>
       <div className="texts">

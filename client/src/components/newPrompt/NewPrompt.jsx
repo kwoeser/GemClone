@@ -3,80 +3,110 @@ import './newPrompt.css'
 import { useRef, useEffect, useState} from 'react'
 import Upload from '../upload/Upload'
 import model from '../../lib/gemini'
+import Markdown from "react-markdown"
+
 
 const NewPrompt = () => {
   const [question, setQuestion] = useState("");
   const [answer, setAnswer] = useState("");
-
+  const [inputText, setInputText] = useState(""); // Add this for input control
 
   const [img, setImg] = useState({
     isLoading: false,
     error: "",
     dbData: {},
+    aiData: {},
   });
 
   const endRef = useRef(null);
   
   useEffect(() => {
     endRef.current.scrollIntoView({ behavior: "smooth" });
-    
-  }, []); 
+  }, [question, answer, img.dbData]); // Update scroll when messages change
 
 
   const add = async (text) => {
-    setQuestion(text)
-
-    const result = await model.generateContent(text);
-    const response = await result.response;
-    setAnswer(response.text())
-
+    setQuestion(text);
+    try {
+      const result = await model.generateContent(Object.entries(img.aiData).length ? [img.aiData, text] : [text]);
+      const response = await result.response;
+      setAnswer(response.text());
+    } catch (error) {
+      console.error("Error generating response:", error);
+    }
   };
 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!inputText.trim()) return;
 
-    const text = e.target.text.value;
-    if (!text) return;
+    await add(inputText);
+    setInputText(""); 
+  };
 
-    add(text);
+
+
+  const onUploadStart = (evt) => {
+    const file = evt.target.file[0]
+
+    const reader = new FileReader()
+    reader.onloadend = () => {
+      setImg((prev) => ({
+        ...prev,
+        isLoading: true, 
+        aiData: {
+          inlineData: {
+            data: reader.result.split(',')[1],
+            mimeType: file.type,
+
+          }
+      }}))
+    }
+
+    reader.readAsDataURL(file);
 
   }
 
+
+
   return (
     <>
+      {img.isLoading && <div className="">Loading...</div>}
+      {img.dbData?.filePath && (
+        <IKImage className= "image-container"
+          urlEndpoint={import.meta.env.VITE_IMAGE_KIT_ENDPOINT}
+          path={img.dbData?.filePath}
+          width="380"
+          transformation={[{ width: 380 }]}
+        />
+      )}
 
-    {/* New chat is added here */}
-    {/* test */}
-    {/* <button onClick={add}>TEST</button> */}
-    {/* ADD NEW CHAT */}
-    {img.isLoading && <div className="">Loading...</div>}
-    {img.dbData?.filePath && (
-      <IKImage
-        urlEndpoint={import.meta.env.VITE_IMAGE_KIT_ENDPOINT}
-        path={img.dbData?.filePath}
-        width="380"
-        transformation={[{ width: 380 }]}
-      />
-    )}
+      {question && <div className='message user'>{question}</div>}
+      {answer && 
+      <div className='message'>
+        <Markdown>{answer}</Markdown>
+      </div>}
 
 
-    {question && <div className='message user'>{question}</div>}
-    {answer && <div className='message'>{answer}</div>}
-    <div className="endChat" ref={endRef}></div>
-    <form className="newFrom" onSubmit={handleSubmit}></form>
 
-        <div className="newPrompt">
-            <form className="newForm">
-                <Upload />
-                <input id="file" type="text" multiple={false} hidden/>
-                <input type="text" placeholder='Ask anything...' />
-                <input type="text" name="text" />
-                <button>
-                    <img src="/arrow.png" alt="" />
-                </button>
-            </form>
-        </div>
+      <div className="endChat" ref={endRef}></div>
+
+      <div className="newPrompt">
+        <form className="newForm" onSubmit={handleSubmit}>
+          <Upload />
+          <input id="file" type="text" multiple={false} hidden/>
+          <input 
+            type="text" 
+            placeholder='Ask anything...'
+            value={inputText}
+            onChange={(e) => setInputText(e.target.value)}
+          />
+          <button type="submit">
+            <img src="/arrow.png" alt="" />
+          </button>
+        </form>
+      </div>
     </>
   )
 }

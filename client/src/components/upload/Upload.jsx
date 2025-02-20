@@ -2,7 +2,6 @@ import React from 'react'
 import { IKContext, IKImage, IKUpload } from 'imagekitio-react';
 
 
-
 const urlEndpoint = import.meta.env.VITE_IMAGE_KIT_ENDPOINT;
 const publicKey = import.meta.env.VITE_IMAGE_KIT_PUBLIC_KEY;
 
@@ -56,6 +55,15 @@ const upload = () => {
                 UseUniqueFileName={true}
                 onUploadProgress={onUploadProgress}
                 onUploadStart={onUploadStart}
+                style={{
+                    padding: '4px', // Reduced padding
+                    borderRadius: '10', 
+                    // backgroundColor: '#605e68',
+                    cursor: 'pointer',
+                    minWidth: '95px', // Add these to prevent the button from growing
+                    maxWidth: '30px',
+                    overflow: 'hidden' 
+                }}
         />
         
         </IKContext>
