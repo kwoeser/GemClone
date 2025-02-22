@@ -13,6 +13,7 @@ const ChatList = () => {
         <Link onClick={() => window.location.reload()} to="/">Refresh Chat</Link>
         <Link to="/">Explore KARMA AI</Link>
         <Link to="/">Contact's Below</Link>
+        
         <hr />
         
         {/* <span className='title'>RECENT CHATS</span>
