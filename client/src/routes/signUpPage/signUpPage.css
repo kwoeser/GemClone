@@ -14,14 +14,14 @@
 /* Adjust form input fields */
 .signUpPage .cl-form-field {
     width: 85%;
-    margin-bottom: 0.5rem; /* Reduce space between fields */
+    margin-bottom: 0.5rem; 
 }
 
 
 /* Target the "Don't have an account? Sign up" text and link */
 .signUpPage .cl-footerAction,
 .signUpPage .cl-footerActionLink {
-    white-space: nowrap; /* Prevent line breaks */
+    white-space: nowrap; 
     margin: 0;
 }
 
@@ -29,7 +29,7 @@
 /* Target both the text and the link */
 .signUpPage .cl-footerAction,
 .signUpPage .cl-footerAction * {
-    font-size: 0.75rem; /* Ensure all text within cl-footerAction has the same size */
+    font-size: 0.75rem; 
 }
 
 /* Handle window size chagne of 400px */

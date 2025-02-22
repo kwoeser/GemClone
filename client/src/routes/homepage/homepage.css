@@ -21,13 +21,13 @@
     font-size: 14px;
     background-color: white;
     margin-top: 15px;
-    margin-left: 50px;
+    margin-left: 48px;
     display: inline-block;
     border: 1px solid black;
     color: black; 
     border-radius: 20px;
     cursor: pointer;  
-    transition: background-color 0.4s; /* Smooth transition */  
+    transition: background-color 0.4s; 
     /* left: 50%; */
     
 }

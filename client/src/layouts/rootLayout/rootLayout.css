@@ -32,7 +32,7 @@
     }
 
 
-    /* Custom styles for the sign-in button */
+    /*  styles for the sign-in button */
     .customSignInButton {
         background-color: white; 
         border: none;
@@ -44,12 +44,12 @@
         font-size: 13px;
         margin: 4px 2px;
         cursor: pointer; 
-        border-radius: 20px; /* Rounded corners */
-        transition: background-color 0.4s; /* Smooth transition */
+        border-radius: 20px; 
+        transition: background-color 0.4s; 
     }
     
     .customSignInButton:hover {
-        background-color: rgb(36, 35, 57); /* Darker green on hover */
+        background-color: rgb(36, 35, 57); 
         color: white;
         
     }

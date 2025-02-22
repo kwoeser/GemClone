@@ -34,16 +34,16 @@
         flex-direction: column;
         overflow: scroll;
 
-        scrollbar-width: none; /* For Firefox */
-        -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+        scrollbar-width: none; 
+        -ms-overflow-style: none;  
         
         &::-webkit-scrollbar {
-            width: 0px;  /* For Chrome, Safari, and Opera */
+            width: 0px;  
         }
 
         /* Make the scrollbar bigger */
         &::-webkit-scrollbar {
-            width: 12px;  /* Adjust the width as needed */
+            width: 12px;  
         }
 
         &::-webkit-scrollbar-thumb {
