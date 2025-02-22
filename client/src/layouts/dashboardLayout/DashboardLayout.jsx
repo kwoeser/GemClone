@@ -11,7 +11,10 @@ const DashboardLayout = () => {
 
   useEffect(() => {
     if (isLoaded && !userId) {
-      navigate("/sign-in");
+      navigate("/");
+
+      // USE THIS FOR SIGN IN BUT NOT FOR CURRENT DEPLOYMENT 2/20/2025
+      // navigate("/sign-in");
     }
   }, [isLoaded, userId, navigate]);
 
